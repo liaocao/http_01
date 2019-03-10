@@ -50,7 +50,7 @@ public class HttpThread extends Thread{
 				}
 				
 			});
-		} catch (MalformedURLException e) {//�ܷ����URL���쳣
+		} catch (MalformedURLException e) {//能否解析URL的异常
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} catch (IOException e) {

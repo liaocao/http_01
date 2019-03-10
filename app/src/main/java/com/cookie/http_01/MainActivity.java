@@ -10,6 +10,9 @@ import android.webkit.WebView;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
 
+import com.cookie.http_01.HttpClient.HttpClientRegistActivity;
+import com.cookie.http_01.multithread.DownLoadActivity;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -27,6 +30,9 @@ public class MainActivity extends ListActivity {
         List<Map<String, Object>> myData = new ArrayList<Map<String, Object>>();
         addItem(myData, "SimpleActivity", new Intent(this, SimpleActivity.class));
         addItem(myData, "ImageActivity", new Intent(this, ImageActivity.class));
+        addItem(myData, "RegistActivity", new Intent(this, RegistActivity.class));
+        addItem(myData, "HttpClientRegistActivity", new Intent(this, HttpClientRegistActivity.class));
+        addItem(myData, "DownLoadActivity", new Intent(this, DownLoadActivity.class));
         return myData;
     }
 
